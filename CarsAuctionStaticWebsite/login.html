@@ -8,118 +8,73 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
 
 </head>
 
 <body>
-    <!--Navigation Bar section starts-->
-    <nav
-        class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <span>Auction</span>Garage</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html" asp-controller="Home"
-                            asp-action="Index">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li> -->
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">SearchCars</a>
-                    </li>
+    <!--Login starts-->
 
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Auctions</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Sell</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Contact</a>
-                    </li>
-
-                </ul>
-
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="register.html" asp-area="Identity"
-                            asp-page="/Account/Register">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="login.html" asp-area="Identity"
-                            asp-page="/Account/Login">Login</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <!--Navigation Bar section ends-->
-    <div class="container">
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <section>
-                    <form id="account" method="post">
-                        <h2>Use a local account to log in.</h2>
-                        <hr />
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <div class="form-floating">
+    <div class="global-container">
+        <div class="card login-form">
+            <div class="card-body" width="480px">
+                <h1 class="card-title text-center">LOGIN</h1>
+                <div class="card-text">
+                    <form>
+                        <div class="form-group">
+                            <label asp-for="Input.Email" class="form-label">Email Address</label>
                             <input asp-for="Input.Email" class="form-control" autocomplete="username"
                                 aria-required="true" />
-                            <label asp-for="Input.Email" class="form-label"></label>
+                            
+
                             <span asp-validation-for="Input.Email" class="text-danger"></span>
                         </div>
-                        <div class="form-floating">
+                        <div class="form-group">
+                            <label asp-for="Input.Password" class="form-label">Password</label>
                             <input asp-for="Input.Password" class="form-control" autocomplete="current-password"
                                 aria-required="true" />
-                            <label asp-for="Input.Password" class="form-label"></label>
+                            
+
                             <span asp-validation-for="Input.Password" class="text-danger"></span>
                         </div>
                         <div>
                             <div class="checkbox">
+                                </br>
                                 <label asp-for="Input.RememberMe" class="form-label">
                                     <input class="form-check-input" asp-for="Input.RememberMe" />
+                                    Remember Me
                                 </label>
                             </div>
                         </div>
                         <div>
-                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Sign
+                                in</button>
                         </div>
                         <div>
                             <p>
-                                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                </br>
+                                <a href="" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                               
                             </p>
                             <p>
-                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new
+                                <a href="register.html" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new
                                     user</a>
-                            </p>
-                            <p>
-                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email
-                                    confirmation</a>
                             </p>
                         </div>
                     </form>
-                </section>
+                </div>
             </div>
-            <div class="col-md-6 col-md-offset-2">
+        </div>
+    </div>
+
+    <!--Login ends-->
+
+    <!-- <div class="col-md-6 col-md-offset-2">
                 <section>
                     <h3>Use another service to log in.</h3>
                     <hr />
-                    <!-- @{
+                    @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
@@ -142,11 +97,11 @@
                         </div>
                     </form>
                 }
-            } -->
+            }
                 </section>
-            </div>
+            </div> -->
 
-        </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
