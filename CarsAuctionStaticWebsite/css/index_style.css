@@ -1,4 +1,22 @@
-@import url("/css/colors.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --yellow:#f9d806;
+    --dark-cyan:#008B8B;
+    --light-cyan:#20B2AA;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
 
 nav .nav-item:hover > a{
     color:var(--dark-cyan) !important;
@@ -220,16 +238,3 @@ nav .nav-item:hover > a{
     font-size: 2rem;
     color:var(--black);
 }
-
-
-/* .card:hover .contImg a{
-    color: #130f40;
-    background-color: #000000;
-}
-
-.card .contImg a{
-    display: absolute;
-    color: #130f4000;
-    background-color: #20b2ab00;
-    transition: 0.2 sec;
-} */
