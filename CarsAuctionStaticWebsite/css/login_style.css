@@ -1,17 +1,12 @@
 @import url("/css/colors.css");
 
 body{
-    /* background-color: #222d32!important; */
     background-image: url("/image/login_background.jpg");
     background-size:     cover;               
     background-repeat:   no-repeat;
     background-position: center center; 
     height:100%;
 }
-
-nav .nav-item:hover > a{
-    color:var(--dark-cyan) !important;
-} 
 
 .btn{
     display: inline-block;
@@ -58,9 +53,4 @@ input[asp-for="Input.Email"],
 input[asp-for="Input.Password"]{
     background: white;
     border-radius: 10px;
-}
-
-.other-links a{
-    color:var(--dark-cyan);
-    text-decoration:none;
 }
