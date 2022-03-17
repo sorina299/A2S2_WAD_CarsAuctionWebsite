@@ -217,7 +217,7 @@ nav .nav-item:hover > a{
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3cm, 10cm));
+    grid-template-columns: repeat(auto-fit, minmax(0cm, 10cm));
     gap:2cm;
 }
 
