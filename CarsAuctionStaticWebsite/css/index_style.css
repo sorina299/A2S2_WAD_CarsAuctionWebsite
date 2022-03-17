@@ -140,6 +140,20 @@ nav .nav-item:hover > a{
     margin-top: 27px;
 }
 
+.btn2{
+    display: inline-block;
+    border:2px solid black;
+    margin-top: 10px;
+    padding:.1cm 1cm;
+    border-color:var(--dark-cyan);
+    background-color:white;
+    color:var(--black);
+    cursor: pointer;
+    font-size: 0.45cm;
+    font-weight: 500;
+    text-align: center;
+}
+
 .btn2:hover{
     background:var(--dark-cyan);
 }

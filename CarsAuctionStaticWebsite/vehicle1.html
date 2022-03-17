@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cars_style.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar section starts-->
+    <nav
+        class="navbar sticky-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <span>Auction</span>Garage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html" asp-controller="Home"
+                            asp-action="Index">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">SearchCars</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Auctions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Sell</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="register.html" asp-area="Identity"
+                            asp-page="/Account/Register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html" asp-area="Identity"
+                            asp-page="/Account/Login">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--Navigation Bar section ends-->
+
+    <div class="container">
+        <div class="rc-CarTitle">
+            <h1>BMW 5 Series 520d - Diesel - Automatic - 190 hp - 122.333 km</h1>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/8.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/9.jpg" class="d-block w-100" alt="...">
+
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="font-size:30px;" scope="col">Condition</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Last maintenance</th>
+                    <td>89.685 km - 02/07/2021</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="font-size:30px;" scope="col">Specifications</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">First registration</th>
+                    <td>14/11/2019</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">Tachometer</th>
+                    <td>122.333 km</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Fuel type</th>
+                    <td>Diesel</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Transmission type</th>
+                    <td>Automatic transmission</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Standard CO2 emission:</th>
+                    <td>EU6</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">CO2 emissions (according to the seller's declaration)</th>
+                    <td>121 g / km</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Power</th>
+                    <td>140 kW (190 Hp)</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Engine size</th>
+                    <td>1,995 cc</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Body type</th>
+                    <td>Sedan</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Doors</th>
+                    <td>4</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Number of seats</th>
+                    <td>5</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Chassis number</th>
+                    <td>*****************</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">Chassis number (short)</th>
+                    <td>******</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Number of keys</th>
+                    <td>2</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Paint</th>
+                    <td>White</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Interior color</th>
+                    <td>Gray</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="font-size:30px;" scope="col">TVA</th>
+                    <th scope="col"></th>
+                    
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">TVA</th>
+                    <td>Without</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="font-size:30px;" scope="col">Origin</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Lifting center</th>
+                    <td>Poland</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">Country of origin</th>
+                    <td>Sweden</td>
+
+                </tr>
+
+                <tr>
+                    <th scope="row">Sales office</th>
+                    <td>Europe</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <!--Footer section starts-->
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h2>Quick Links</h2>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> SearchCars </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Auctions </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Sell </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> AboutUs </a>
+            </div>
+
+            <div class="box">
+                <h2>Contact Info</h2>
+                <a href="#"> <i class="fas fa-phone"></i> +40775611905 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +40749123789 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> auction_garage@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <h2>Social Media</h2>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> Pinterest </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> Created by Hirca Sorina | all rights reserved </div>
+
+    </section>
+
+    <!--Footer section ends-->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
