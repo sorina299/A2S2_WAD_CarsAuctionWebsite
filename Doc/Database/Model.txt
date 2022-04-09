@@ -1,14 +1,14 @@
 //https://dbdiagram.io/d/6251dd382514c97903ffc132
 
-Table Users {
+Table User {
   ID int [pk]
   Name string
   Email string
   Password string
-  Type string [ref: > UserTypes.Type]
+  Type string [ref: > UserType.Type]
 }
 
-Table UserTypes{
+Table UserType{
   Type string [pk]
 }
 
@@ -17,16 +17,16 @@ Table Auction{
   ID int [pk]
   Title string
   Description string
-  Seller int [ref: > Users.ID]
-  Buyer int [ref: > Users.ID]
-  Car int [ref: > Cars.ID]
+  Seller int [ref: > User.ID]
+  Buyer int [ref: > User.ID]
+  Car int [ref: > Car.ID]
   CurrentBid float 
   StartingDate DateTime
   EndingDate DateTime
   
 }
 
-Table Cars {
+Table Car {
   ID int [pk]
   Brand string [ref: > Brand.Name]
   Model string [ref: > Model.Name]
@@ -42,9 +42,9 @@ Table Model{
   Name string [pk]
 }
 
-Table Favorites{
-  User int [pk, ref: > Users.ID]
-  Car int [pk, ref: > Cars.ID]
+Table FavoriteCars{
+  User int [pk, ref: > User.ID]
+  Car int [pk, ref: > Car.ID]
 }
 
 
