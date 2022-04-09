@@ -9,6 +9,6 @@ public class User
     public UserType Type { get; set; }
 
     // relation table FavoriteCars
-    public IEnumerable<Car> MyProperty { get; set; }
+    public IEnumerable<Car> FavoriteCars { get; set; }
 }
 
