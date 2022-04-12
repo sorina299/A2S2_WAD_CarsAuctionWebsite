@@ -9,11 +9,17 @@ public class ApplicationDbContext : DbContext
     {
     }
 
+    //protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //{
+    //    modelBuilder.Entity<Model>()
+    //        .HasKey(c => new { c.Brand, c.Name });
+    //}
+
     public DbSet<User> Users { get; set; }
-    public DbSet<UserType> UserTypes  { get; set; }
-    public DbSet<Auction> Auctions  { get; set; }
-    public DbSet<Car> Cars  { get; set; }
-    public DbSet<Brand> Brands{ get; set; }
-    public DbSet<Model> Models{ get; set; }
+    public DbSet<UserType> UserTypes { get; set; }
+    public DbSet<Auction> Auctions { get; set; }
+    public DbSet<Car> Cars { get; set; }
+    public DbSet<Brand> Brands { get; set; }
+    public DbSet<Model> Models { get; set; }
 }
 

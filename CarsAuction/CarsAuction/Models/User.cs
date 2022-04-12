@@ -6,7 +6,8 @@ public class User
     public string Name { get; set; }
     public string Email { get; set; }
     public string Password { get; set; }
-    public UserType Type { get; set; }
+    public string UserTypeID { get; set; }
+    public virtual UserType UserType { get; set; }
 
     // relation table FavoriteCars
     public IEnumerable<Car> FavoriteCars { get; set; }
