@@ -19,7 +19,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<UserType> UserTypes { get; set; }
     public DbSet<Auction> Auctions { get; set; }
     public DbSet<Car> Cars { get; set; }
-    public DbSet<Brand> Brands { get; set; }
-    public DbSet<Model> Models { get; set; }
+    public DbSet<CarBrand> CarBrands { get; set; }
+    public DbSet<CarModel> CarModels { get; set; }
 }
 

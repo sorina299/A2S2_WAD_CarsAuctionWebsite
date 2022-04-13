@@ -25,6 +25,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin pages
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/UserTypes">UserType</a></li>
+                            <li><a class="dropdown-item" href="/Users">Users</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/CarBrands">CarBrands</a></li>
+                            <li><a class="dropdown-item" href="/CarModels">CarModels</a></li>
+                            <li><a class="dropdown-item" href="/Cars">Cars</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/Auctions">Auctions</a></li>
+
+                            @*<li><hr class="dropdown-divider"></li>*@
+                          </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
