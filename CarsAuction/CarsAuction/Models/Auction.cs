@@ -10,10 +10,10 @@ public class Auction
 
     public int SellerID { get; set; }
     public int BuyerID { get; set; }
-    public int CardID { get; set; }
+    public int CarID { get; set; }
     
-    public virtual User Seller { get; set; }
-    public virtual User Buyer { get; set; }
-    public virtual Car Car { get; set; }
+    public virtual User? Seller { get; set; }
+    public virtual User? Buyer { get; set; }
+    public virtual Car? Car { get; set; }
 
 }
