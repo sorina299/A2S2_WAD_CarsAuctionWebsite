@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CarsAuction.DataAcces;
-using CarsAuction.Models;
+using CarsAuction.AppLogic.Models;
 
 namespace CarsAuction.Controllers
 {
