@@ -11,12 +11,12 @@ public interface IRepository<M>
     IEnumerable<M> Get();
     M Get(int id);
 
-    bool Add(M item);
-    bool Add(IEnumerable<M> items);
+    void Add(M item);
+    void Add(IEnumerable<M> items);
 
-    bool Update(M item);
-    bool Update(IEnumerable<M> items);
+    void Update(M item);
+    void Update(IEnumerable<M> items);
 
-    bool Delete(M item);
-    bool Delete(IEnumerable<M> items);
+    void Delete(M item);
+    void Delete(IEnumerable<M> items);
 }

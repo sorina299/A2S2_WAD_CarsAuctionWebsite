@@ -15,43 +15,43 @@ public class Repository<T> : IRepository<T> where T : class, new()
     {
         this.dbContext = dbContext;
     }
-    public bool Add(T item)
+    public IEnumerable<T> Get() => dbContext.Set<T>().ToArray();
+    public T Get(int id) => dbContext.Set<T>().FirstOrDefault();
+    
+    public void Add(T item)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().Add(item);
+        dbContext.SaveChanges();
     }
 
-    public bool Add(IEnumerable<T> items)
+    public void Add(IEnumerable<T> items)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().AddRange(items);
+        dbContext.SaveChanges();
     }
 
-    public bool Delete(T item)
+    public void Update(T item)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().Update(item);
+        dbContext.SaveChanges();
     }
 
-    public bool Delete(IEnumerable<T> items)
+    public void Update(IEnumerable<T> items)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().UpdateRange(items);
+        dbContext.SaveChanges();
     }
 
-    public IEnumerable<T> Get()
+    public void Delete(T item)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().Remove(item);
+        dbContext.SaveChanges();
     }
 
-    public T Get(int id)
+    public void Delete(IEnumerable<T> items)
     {
-        throw new NotImplementedException();
+        dbContext.Set<T>().RemoveRange(items);
+        dbContext.SaveChanges();
     }
 
-    public bool Update(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Update(IEnumerable<T> items)
-    {
-        throw new NotImplementedException();
-    }
 }

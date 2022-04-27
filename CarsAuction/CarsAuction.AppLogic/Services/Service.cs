@@ -18,13 +18,13 @@ public class Service<M>
     public IEnumerable<M> Get() => repository.Get();
     public M Get(int id) => repository.Get(id);
 
-    public bool Add(IEnumerable<M> items) => repository.Add(items);
-    public bool Add(M item) => repository.Add(item);
+    public void Add(IEnumerable<M> items) => repository.Add(items);
+    public void Add(M item) => repository.Add(item);
 
-    public bool Update(IEnumerable<M> items) => repository.Update(items);
-    public bool Update(M item) => repository.Update(item);
+    public void Update(IEnumerable<M> items) => repository.Update(items);
+    public void Update(M item) => repository.Update(item);
 
-    public bool Delete(IEnumerable<M> items) => repository.Delete(items);
-    public bool Delete(M item) => repository.Delete(item);
+    public void Delete(IEnumerable<M> items) => repository.Delete(items);
+    public void Delete(M item) => repository.Delete(item);
 
 }

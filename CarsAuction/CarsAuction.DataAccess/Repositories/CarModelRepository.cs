@@ -14,4 +14,9 @@ public class CarModelRepository : Repository<CarModel>, ICarModelRepository
     public CarModelRepository(ApplicationDbContext dbContext) : base(dbContext)
     {
     }
+
+    public new CarModel Get( int id )
+    {
+        return dbContext.CarModels.Where( i => i.ID == id ).FirstOrDefault();
+    }
 }
