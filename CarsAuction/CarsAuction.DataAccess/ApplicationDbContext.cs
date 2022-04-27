@@ -1,4 +1,4 @@
-﻿using CarsAuction.Models;
+﻿using CarsAuction.AppLogic.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarsAuction.DataAcces;

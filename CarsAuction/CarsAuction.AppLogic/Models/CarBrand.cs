@@ -1,4 +1,4 @@
-﻿namespace CarsAuction.Models;
+﻿namespace CarsAuction.AppLogic.Models;
 using System.ComponentModel.DataAnnotations;
 public class CarBrand
 {

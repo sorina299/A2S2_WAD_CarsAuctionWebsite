@@ -1,4 +1,4 @@
-﻿namespace CarsAuction.Models;
+﻿namespace CarsAuction.AppLogic.Models;
 public class Auction
 {
     public int ID { get; set; }

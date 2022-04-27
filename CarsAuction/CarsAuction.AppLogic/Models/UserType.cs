@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CarsAuction.Models;
+namespace CarsAuction.AppLogic.Models;
 
 public class UserType
 {
