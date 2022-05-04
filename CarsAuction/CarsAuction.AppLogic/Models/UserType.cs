@@ -2,9 +2,9 @@
 
 namespace CarsAuction.AppLogic.Models;
 
-public class UserType
+public class UserType : IID
 {
-    [Key]
+    public int ID { get; set; }
     public string Title { get; set; }
     //public IEnumerable<User> Users { get; set; }
 }

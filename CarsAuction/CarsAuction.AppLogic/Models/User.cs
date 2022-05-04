@@ -1,6 +1,6 @@
 ﻿namespace CarsAuction.AppLogic.Models;
 
-public class User
+public class User : IID
 {
     public int ID { get; set; }
     public string Name { get; set; }

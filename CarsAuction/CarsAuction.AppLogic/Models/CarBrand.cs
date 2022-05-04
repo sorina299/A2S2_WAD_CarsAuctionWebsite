@@ -1,8 +1,8 @@
 ﻿namespace CarsAuction.AppLogic.Models;
 using System.ComponentModel.DataAnnotations;
-public class CarBrand
+public class CarBrand : IID
 {
-    [Key]
+    public int ID { get; set; }
     public string Name { get; set; }
 }
 
