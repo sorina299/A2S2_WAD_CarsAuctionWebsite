@@ -21,8 +21,5 @@
     <ProjectReference Include="..\CarsAuction.DataAccess\CarsAuction.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
 
 </Project>

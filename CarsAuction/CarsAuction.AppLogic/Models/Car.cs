@@ -7,4 +7,6 @@ public class Car : IID
     public int? ModelID { get; set; }
     public CarBrand? Brand { get; set; }
     public CarModel? Model { get; set; }
+
+    public IEnumerable<Image>? Images { get; set; }
 }
