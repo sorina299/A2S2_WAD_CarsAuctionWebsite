@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarsAuction.AppLogic.Models;
 
-internal interface IID
+public interface IID
 {
     public int ID { get; set; }
 }
