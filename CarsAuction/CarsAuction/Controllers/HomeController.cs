@@ -23,6 +23,36 @@ namespace CarsAuction.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+
+            return View();
+        }
+
+        public IActionResult Register()
+        {
+
+            return View();
+        }
+
+        public IActionResult Vehicle1()
+        {
+
+            return View();
+        }
+
+        public IActionResult FindMore()
+        {
+
+            return View();
+        }
+
+        public IActionResult BiddingProcess()
+        {
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

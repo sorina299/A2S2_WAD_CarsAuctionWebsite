@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --yellow:#f9d806;
+    --dark-cyan:#008B8B;
+    --light-cyan:#20B2AA;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body{
+    background-image: url("/image/login_background.jpg");
+    background-size:     cover;               
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height:100%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 0.5cm;
+    padding: .3cm 1cm;
+    background: var(--dark-cyan);
+    color: white;
+    cursor: pointer;
+    font-size: 0.7cm;
+    border-radius: .5cm;
+    font-weight: 500;
+    text-align: center;
+}
+
+    .btn:hover {
+        background: #016363;
+        
+    }
+
+.global-container{
+    
+    margin-top: 3cm;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--dark-cyan);
+}
+
+.form{
+    padding-top: 100px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.login-form{
+    width:500px;
+    height:500px;
+    margin:20px;
+    background:white;
+    border-radius:10px;
+}
+
+input[asp-for="Input.Email"],
+input[asp-for="Input.Password"]{
+    background: white;
+    border-radius: 10px;
+}
+
+.other-links a{
+    color:var(--dark-cyan);
+    text-decoration:none;
+}

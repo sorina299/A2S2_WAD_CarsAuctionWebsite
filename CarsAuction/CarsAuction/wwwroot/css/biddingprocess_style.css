@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --yellow:#f9d806;
+    --dark-cyan:#008B8B;
+    --light-cyan:#20B2AA;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+nav .nav-item:hover > a{
+    color:var(--dark-cyan) !important;
+} 
+
+.footer{
+    background: rgb(194, 193, 193);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3cm, 10cm));
+    gap:2cm;
+}
+
+.footer .box-container .box h2{
+    font-weight: bold;
+    font-size: 0.5cm;
+    padding:0.5cm 1cm;
+    color:var(--black);
+
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 20px;
+    padding:0.5cm 1cm;
+    color:var(--light-color);
+}
+
+.footer .box-container .box a i{
+    color:var(--black);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1cm;
+}
+
+.footer .credit{
+    text-align: center;
+    padding-top: 1cm;
+    margin-top: 1cm;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.rc-CarTitle h1{
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+    text-align: center;
+    font-size: 0.9cm;
+    color:var(--dark-cyan);
+    position:relative;
+}
+
+.lines-group{
+    text-align: center;
+    width:600px;
+    height:850px;
+    margin:20px;
+    background:var(--dark-cyan);
+    border-radius:5px;
+}
+.container1{
+    margin-top: 1cm;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.container1 .col h3{
+    padding-bottom: 1cm;
+    text-align: center;
+    font-size: 0.9cm;
+    color:var(--black);
+    position:relative;
+}
+

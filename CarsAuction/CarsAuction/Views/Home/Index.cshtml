@@ -2,7 +2,178 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Auction Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/index_style.css">
+
+</head>
+
+<body>
+<section class="home" id="home">
+
+        <h1 data-speed="-2" class="home-parallax">find your car</h1>
+
+        <img data-speed="5" class="home-parallax" src="image/home-img.png" alt="">
+
+        <a data-speed="7" class="btn home-parallax">Explore Cars</a>
+
+    </section>
+
+    <!--Home section ends-->
+
+    <!--Reasons to buy section starts-->
+
+    <section class="reasonstobuy" id="reasonstobuy">
+        <h2 class="heading">Why would you choose AuctionGarage? </h2>
+
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">High quality second-hand vehicles</h5>
+                        <p class="card-text">We sell high quality second-hand vehicles exclusively and directly to car
+                            dealers. All cars benefit from quality descriptions and inspections.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">A unique and secure platform</h5>
+                        <p class="card-text">We offer a unique U.E. platform. access to all vehicles, a unique partner,
+                            a unique way of working and a solid expertise in cross-border sales. It's about speed, ease
+                            and no hassle.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">You are the center of our attention</h5>
+                        <p class="card-text">We offer transportation, delivery and financing solutions. We keep our
+                            word.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="container1">
+            <a class="btn1" asp-area="" asp-controller="Home" asp-action="FindMore">Find More</a>
+        </div>
+
+    </section>
+
+    <!--Reasons to buy section ends-->
+
+    <!--Popular vehicles section starts-->
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">Popular <span>Vehicles</span> </h1>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">BMW 5 Series 520d</h6>
+                            <h7 class="price">Estimated Price: $23.145</h7>
+                            <p class="card-text">Diesel - Automatic - 190 hp - 122.333 km</p>
+                            <a class="btn2" asp-area="" asp-controller="Home" asp-action="Vehicle1">Check Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Volkswagen Golf 1.6 TDI</h6>
+                            <h7 class="price">Estimated Price: $8.000</h7>
+                            <p class="card-text">2013 - Comfortline - Diesel - Automatic - 110 hp - 140.735 km</p>
+                            <button class="btn2">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Mercedes-Benz S 450</h6>
+                            <h7 class="price">Estimated Price: $52.400</h7>
+                            <p class="card-text">2020 - Premium - Hibrid - Automatic - 367 hp - 2.325 km</p>
+                            <button class="btn2">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Dacia Duster 1.5 DCi</h6>
+                            <h7 class="price">Estimated Price: $3.900</h7>
+                            <p class="card-text">2010 - Laureate - Diesel - Manual - 90 hp - 164.817 km</p>
+                            <button class="btn2">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Audi Q5 2.0 TDI</h6>
+                            <h7 class="price">Estimated Price: $34.000</h7>
+                            <p class="card-text">2017 - S line - Diesel - Automatic - 190 hp - 83.127 km</p>
+                            <button class="btn2">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="image/car6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">BMW 7 Series 750d</h6>
+                            <h7 class="price">Estimated Price: $21.700</h7>
+                            <p class="card-text">2012 - Eccelsa - Diesel - Automatic - 381 hp - 161.000 km</p>
+                            <button class="btn2">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Popular vehicles section ends-->
+
+    <!--Newsletter section starts-->
+
+    <section class="newsletter">
+    
+        <h3>subscribe for latest updates</h3>
+       <form action="">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="subscribe">
+       </form>
+    
+    </section>
+
+    <!--Newsletter section ends-->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="js/script.js"></script>
+</html>
